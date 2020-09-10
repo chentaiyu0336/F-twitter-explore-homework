@@ -1,2 +1,44 @@
 .container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $border-color;
+  margin-top: 10%;
+  margin-bottom: 20%;
+  padding: 5% 5%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.lnputText {
+  background-color: inherit;
+  border: transparent;
+  border-bottom: $border-style;
+  padding: 10% 1%;
+  width: 100%;
+}
+
+.loginButton {
+  @include form-btn-variant($primary-color, $body-bg);
+}
+
+.resgiterButton {
+  @include form-btn-variant($white, $primary-color);
+}
+
+.forget {
+  display: block;
+  margin: 5% 0;
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.or {
+  text-align: center;
 }

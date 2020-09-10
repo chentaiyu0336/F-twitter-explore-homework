@@ -10,3 +10,11 @@
   padding: 8px 35px;
   border-radius: 80px;
 }
+
+@mixin form-btn-variant($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  border-color: $primary-color;
+  padding: 2% 0;
+  border-radius: 80px;
+}
