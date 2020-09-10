@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+  border-bottom: 2px solid $border-color;
+
+  nav {
+    display: flex;
+
+    button {
+      &:first-child {
+        @include head-btn-variant($primary-color, $body-bg);
+        margin-right: 5px;
+      }
+      &:last-child {
+        @include head-btn-variant($white, $primary-color);
+      }
+    }
+  }
+}
