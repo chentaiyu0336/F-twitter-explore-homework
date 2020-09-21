@@ -8,7 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Title</title>
 </head>
-
+<!--TODO feedback: 说一个总的css class的命名问题：我们的css class的命名只允许出现'小写字母'和中线，也就是
+ 合理的只有a,或者a-b这两种格式。除此之外的任何其他格式都是不正确的
+-->
 <body>
 
   <header class="header">
@@ -22,6 +24,7 @@
   <main class="container">
     <form>
       <h2>查看世界上正在发生的事情</h2>
+      <!--      TODO feedback: 语义化标签使用不正确：placeholder里面的内容应该放入<label>标签-->
       <input type="text" class="lnputText" placeholder="电话、邮件地址或用户名" />
       <section>
         <input type="text" class="lnputText password" placeholder="密码" />

@@ -3,6 +3,7 @@
   font-size: $font-size;
 }
 
+// TODO feedback: head-btn-variant和form-btn-variant代码是一样的，其实mockup上这俩的padding也是一样的，所以其实这两个mixin可以成一个
 @mixin head-btn-variant($color, $bg-color) {
   color: $color;
   background-color: $bg-color;
